@@ -1,28 +1,44 @@
 <!DOCTYPE html>
-
-<!-- Instructions: Add a link to the stylesheet 'styles.css' at the designated spot below. -->
-
-<!-- Hints:
-
-* sample link: <link href="path-to-stylesheet/stylesheet.css" rel="stylesheet">
-* path to stylesheet: "css/styles.css"
-
--->
-
-<html>
+<html lang="en">
 <head>
-	<title>Border-box utility</title>
-	<!-- the next line loads the tests for the Udacity Feedback extension -->
-		<link href="stylesheet.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Normal Flow Quiz</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: bold;
+    }
+    span, div {
+      border: 2px solid #2e3d49;
+    }
+    .blue {
+      background-color: #02b3e4;
+    }
+    .inline-block {
+      display: inline-block;
+    }
+    .random {
+      border: 2px solid:#2e3d49;
+      background-color: #ecc81a;
+      height: 40px;
+    }
+  </style>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <div class="container">
-    <div id="primary">
-      <a>oi</a>
-    </div>
-    <div id="secondary">
-    <a> be</a>
-    </div>
+  <div class="blue">
+    <span>HTML, </span>
+    <div>CSS </div>
+    <span>and </span>
+    <span>JavaScript </span>
+    <div>are the programming languages</div>
+    <div> of the web.</div>
   </div>
+  <div class="container">
+    <spam> saldfajçsdlkfa asçldkfa sflkjas fçalksjf açslkdfja sçdflka sdçflaksj dfçlaskdf </spam>
+    <div class="random inline-block"> this is a random div</div>
+    <div class="random inline-block"> this is another div showing like inline element</div>
+    <spam> texto e mais texto </spam>
 </body>
 </html>
