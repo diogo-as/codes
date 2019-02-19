@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz de fluxo relativo</title>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: bold;
+      font-size: 14pt;
+    }
+    .bordered {
+      border: 2px solid #2e3d49;
+    }
+    .parent {
+      height: 100%;
+      background-color: #dbe2e8;
+      padding: 8px;
+    }
+    .light-olive {
+      background-color: #DFDFD1;
+    }
+    .relative {
+    /  position: relative;
+    /  vertical-align: top;
+  /    top: 50px;
+    }
+    .sibling {
+      display: inline-block;
+      background-color: #15C26B;
+      width: 150px;
+      height: 100px;
+      /vertical-align: text-top;
+    }
+    .child {
+      display: inline-block;
+      background-color: #ffae0c;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="sibling bordered">Irmão</div>
+    <div class="sibling relative bordered">Irmão relativo
+      <div class="child bordered">Filho</div>
+      <div class="child bordered">Filho</div>
+    </div>
+    <div class="sibling bordered">Irmão</div>
+  </div>
+  <span class="light-olive">
+    Irmão do pai
+  </span>
+</body>
+</html>
