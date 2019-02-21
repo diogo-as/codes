@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pai com irmãos e floats filhos</title>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: bold;
+      font-size: 14pt;
+    }
+    .clearfix:after {
+      content: '';
+      clear: both;
+      display: block;
+
+    }
+    .overflow {
+      overflow: auto;
+    }
+    .overflowvisible {
+      overflow: visible;
+    }
+    .overflowhidden {
+      overflow: hidden;
+    }
+    .parent {
+      background-color: blue;
+    }
+    .bordered {
+      border: 2px solid #2e3d49;
+    }
+    .left {
+      float: left;
+    }
+    .child {
+      background-color: #15A222;
+    }
+    .sibling {
+      background-color: #D16906;
+    }
+  </style>
+</head>
+<body>
+  <div class="bordered parent overflow">
+    <div class="bordered child left overflowhidden">Filho</div>
+    <div class="bordered child left overflowhidden">Filho</div>
+  </div>
+  <div class="bordered sibling">Irmão do pai</div>
+</body>
+</html>
